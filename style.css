@@ -85,6 +85,7 @@ html {
 
 .titlebar {
   position: relative;
+  min-height: 150px;
   background-color: #f0f9ff;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -100,6 +101,8 @@ html {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 5px repeat(4, 1fr);
   gap: 15px;
+  resize: both;
+  overflow: auto;
 }
 
 .card {
@@ -110,7 +113,6 @@ html {
   background-color: #f0f9ff;
   border-left: 5px solid #4ade80;
   border-radius: 10px;
-  height: 190px;
   box-shadow: 2px 2px 2px 2px #bae6fd;
 }
 
@@ -164,7 +166,8 @@ html {
 }
 
 .white-box {
-  height: 30vh;
+  height: auto;
+  padding: 2px;
   background-color: #f0f9ff;
   border-radius: 20px;
   box-shadow: 2px 2px 2px 2px #bae6fd;
@@ -175,6 +178,16 @@ html {
   gap: 25px;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 15px 1fr;
+}
+
+.announcements-container .title {
+  color: black;
+  font-size: 20px;
+}
+
+.announcements-container p {
+  font-size: 12px;
+  color: rgb(51, 51, 51);
 }
 
 .title {
@@ -211,6 +224,7 @@ html {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: flex-start;
   gap: 0.5em;
   text-align: center;
 }
